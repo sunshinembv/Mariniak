@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indent_15dp">15dp</dimen>
+    <dimen name="indent_17dp">17dp</dimen>
+    <dimen name="indent_5dp">5dp</dimen>
+    <dimen name="indent_16dp">16dp</dimen>
+    <dimen name="indent_74dp">74dp</dimen>
+    <dimen name="indent_6dp">6dp</dimen>
+    <dimen name="indent_10dp">10dp</dimen>
+    <dimen name="indent_7dp">7dp</dimen>
+    <dimen name="indent_30dp">30dp</dimen>
+    <dimen name="indent_8dp">8dp</dimen>
+    <dimen name="movie_poster_height">550dp</dimen>
+    <dimen name="indent_36dp">36dp</dimen>
+    <dimen name="loading_error_icon_size">100dp</dimen>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/indent_16dp"
+    android:layout_marginVertical="@dimen/indent_6dp"
+    app:cardCornerRadius="@dimen/indent_15dp"
+    app:cardElevation="@dimen/indent_10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/indent_15dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/movie_poster_card"
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="@dimen/indent_5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="50dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/indent_15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@id/movie_genre_and_year"
+            app:layout_constraintEnd_toStartOf="@id/movie_title_line"
+            app:layout_constraintStart_toEndOf="@id/movie_poster_card"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Пираты карибского моря" />
+
+        <TextView
+            android:id="@+id/movie_genre_and_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/indent_15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/movie_title_line"
+            app:layout_constraintStart_toEndOf="@id/movie_poster_card"
+            app:layout_constraintTop_toBottomOf="@id/movie_title"
+            tools:text="Приключения (2003)" />
+
+        <ImageView
+            android:id="@+id/movie_favorites"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/baseline_star_rate_24"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/movie_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/movie_title" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/movie_title_line"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/indent_74dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

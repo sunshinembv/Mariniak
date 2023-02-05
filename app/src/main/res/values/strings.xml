@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyMoviesApp</string>
+    <string name="not_found">Не найдено</string>
+    <string name="repeat">Повторить</string>
+    <string name="network_connection_error">Произошла ошибка при загрузке данных, проверьте подключение к сети</string>
+    <string name="popular">Популярные</string>
+    <string name="favorites">Избранное</string>
+    <string name="search">Поиск</string>
+    <string name="genres">Жанры: %1$s</string>
+    <string name="сountry_of_origin">Страны: %1$s</string>
 </resources>
